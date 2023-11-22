@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수</title>
+    <script>
+        //call back fucntion
+        //함수의 인자로 전달되는 함수. 입력으로 전달되는 함수
+        //callback - 나중에 호출된다.
+        //ex) 클릭후에~, 마우스 오버 후에~, 1초 뒤에~, 움직인 뒤에~
+
+        function myFunc(){
+            //alert('myFunc!');
+            console.log('myFunc')
+
+        }
+        //setTimeout(myFunc, 3000); //3초후에
+        //setTimeout 함수의 인자(입력)으로 myFunc함수, 3000 전달
+        //3초 후에 myFunc 함수 호출.
+        //setTimeout 함수의 인자로 전달된 myFunc.함수가 콜백함수가 된다.
+
+        setInterval(myFunc,1000);
+        //구간 설정
+        //1초마다 myFunc함수 호출
+            </script>
+</head>
+<body>
+    
+</body>
+</html>

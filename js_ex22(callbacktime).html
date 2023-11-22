@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백함수 시간변환</title>
+    <script>
+
+        var time = 1;
+        var sec = time%60
+
+        function myFunc(){
+            console.log(time+'초')
+            if(time >=60){
+                var min = time / 60
+                var sec = time % 60
+                console.log(min + '분' + sec +'초')
+            }
+            
+            time++
+        }
+
+        setInterval(myFunc,1000);
+            </script>
+</head>
+<body>
+    
+</body>
+</html>

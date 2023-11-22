@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var time = 1
+        var isPlaying = false;
+        function myFunc(){
+            console.log(time)
+            time++
+        }
+        function start(){
+            if(isPlaying===false){
+                setInterval(myFunc, 1000);
+                isPlaying=true;
+            }else if(isPlaying ===true){
+                console.log('이미 재 생중!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="start()">시작</button>
+</body>
+</html>
